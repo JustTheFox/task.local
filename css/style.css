@@ -10,17 +10,14 @@ body {
 	text-transform: uppercase;
 	color: #000;
 }
-
 section, div, p, h1, h2, h3, h4, img, ul, li {
 	margin: 0;
 	padding: 0;
 }
-
 :active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
 }
-
 .b-mark {
 	color: #bb1d1f;
 	background: transparent;
@@ -32,16 +29,15 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-header-wrapper {
 	box-sizing: border-box;
-	padding-top: 20px;
-	padding-bottom: 20px;
 	height: 731px;
+	padding-top: 20px;
 	background-color: #94b4d7;
 	background-image: url(../img/header_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 .b-header {
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 .b-header__logo-wrapper {
 	position: relative;
@@ -54,6 +50,9 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	display: inline-block;
 	vertical-align: middle;
 }
+.b-header .b-logo {
+	margin-right: 24px;
+}
 .b-logo__picture {
 	width: 428px;
 	height: 87px;
@@ -62,7 +61,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	box-sizing: border-box;
 	width: 479px;
 	padding: 8px 18px 9px 0;
-    margin-left: 24px;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.8);
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -77,13 +75,11 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
     top: 76px;
     left: 433px;
 }
-
 .b-call-number__text,
 .b-call-number__around,
 .b-call-number__tel {
 	display: block;
 }
-
 .b-call-number__text {
 	text-transform: none;
 	color: #000;
@@ -92,23 +88,19 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	letter-spacing: 2px;
 }
 
-.b-call-number___tel {
+.b-call-number__tel {
 	font-size: 48px;
 }
-
 .b-call-number__tel-a {
 	color: #000;
 	text-decoration-style: dashed;
 }
-
 .b-return-text-wrapper {
 	margin-bottom: 10px;
 }
-
 .b-return-call {
 	padding-top: 30px;
 }
-
 .b-return-call__text {
 	box-sizing: border-box;
 	height: 48px;
@@ -136,7 +128,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-return-call__mark {
 	font-weight: 600;
 }
-.b-call-form-wrapper {
+.b-call-wrapper {
 	padding-top: 42px;
 }
 .b-call-form__input-wrapper {
@@ -153,7 +145,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-call-form__input-wrapper:focus::before { display: none; }
 
-.b-call-form__input-wrapper input[type="text"] {
+.b-call-form__input-wrapper input {
 	box-sizing: border-box;
 	width: 480px;
 	height: 45px;
@@ -169,10 +161,9 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-size: 36px;
 	font-weight: 300;
 	vertical-align: bottom;
-	text-indent: 35px;
+	padding-left: 35px;
 	letter-spacing: -1px;
 }
-
 .b-call-form__input-wrapper input::-webkit-input-placeholder  { color: #000; font-weight: 100; }
 .b-call-form__input-wrapper input::-moz-placeholder  { color: #000; }
 .b-call-form__input-wrapper input:-moz-placeholder  { color: #000; }
@@ -211,7 +202,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	box-sizing: border-box;
 	height: 544px;
 	padding-top: 42px;
-	padding-bottom: 5px;
+	margin-bottom: 5px;
 	background-color: #fff;
 }
 .b-our-work-items {
@@ -242,24 +233,24 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	line-height: 20px;
 }
 .b-our-features {
+	height: 510px;
 	background-color: #f7f7f7;
 	padding-top: 52px;
-	padding-bottom: 14px;
 }
 .b-our-features__list {
 	list-style: none;
 	font-size: 24px;
 	font-weight: 600;
 	padding-top: 66px;
-	padding-bottom: 25px;
+	margin-bottom: 25px;
 	letter-spacing: -1px;
 	word-spacing: 3px;
 }
 .b-our-features__list-item {
-	margin-left: 35px;
+	padding-left: 35px;
 	margin-bottom: 39px;
 }
-
+.b-our-features__list-item:last-child { margin-bottom: 0; }
 .b-our-features__list-item::before {
 	content: "";
 	display: inline-block;
@@ -268,37 +259,31 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	margin-right: 34px;
 	background: url(../img/check-icon.png) no-repeat;
 }
-.b-what-to-do {
+.b-questions {
 	background-color: #fff;
 	padding-top: 100px;
-	padding-bottom: 95px;
+	margin-bottom: 95px;
 }
-.b-what-to-do-wrapper {
-	margin-left: 58px;
+.b-questions-wrapper {
+	padding-left: 58px;
 } 
-.b-what-to-do__headline {
+.b-questions__headline {
 	font-size: 28px;
 	font-weight: 300;
-	margin-left: 97px;
+	padding-left: 97px;
 }
-.b-what-to-do__text {
-	text-align: center;
-	text-transform: none;
-	line-height: 20px;
-}
-.b-what-to-do__text-wrapper {	
+.b-questions__text-wrapper {	
 	box-sizing: border-box;
 	border-width: 3px;
 	border-color:  #ff9c00;
 	border-style: solid;
 	border-radius: 10px;
 	width: 840px;
-	padding: 20px 50px;
-	margin-top: 23px;
-	margin-left: 2px;
+	padding-top: 23px;
+	padding-left: 50px;
 	position: relative;
 }
-.b-what-to-do__text-wrapper::before {
+.b-questions__text-wrapper::before {
 	content: "!";
 	font-family: Open Sans, sans-serif;
 	font-size: 260px;
@@ -308,14 +293,19 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	top: -210px;
 	left: 12px;
 }
+.b-questions__text {
+	text-align: center;
+	text-transform: none;
+	line-height: 20px;
+}
 .b-text-italic {
 	font-family: "Open Sans";
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 400;
-	padding-bottom: 36px;
+	margin-bottom: 36px;
 }
-.b-text-italic::after {
+.b-questions .b-text-italic::after {
 	content: "";
 	display: block;
 	width: 110px;
@@ -330,8 +320,8 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-weight: 600;
 	margin-bottom: 18px;
 }
-.b-what-to-do__text:last-child{
-	margin: 0;
+.b-questions__text:last-child{
+	margin-bottom: 20px;
 }
 .b-call-us {
 	background-color:  #bb1d1f;
@@ -350,8 +340,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-call-us__form input {
 	display: inline-block;
 	vertical-align: middle;
-}
-.b-call-us__form input[type="text"] {
 	box-sizing: border-box;
 	border: 0;
 	width: 341px;
