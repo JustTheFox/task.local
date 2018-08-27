@@ -108,18 +108,16 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	padding-top: 15px;
 }
 .b-return-call__text {
+	display: block;
 	box-sizing: border-box;
 	height: 48px;
-	padding: 0 17px;
+	padding: 0 16px;
 	margin-bottom: 12px;
 	background-color: #fff;
 	font-family: "Open Sans";
 	font-weight: 300;
-	word-spacing: -2px;
+	letter-spacing: -0.35px;
 	line-height: 48px;
-}
-.b-return-call__text {
-	display: block;
 }
 .b-return-call__text:first-child {
 	width: 324px;
@@ -150,6 +148,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	background: transparent;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	
     text-transform: uppercase;
 }
 .b-call-form__input-wrapper::before {
@@ -165,8 +164,8 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-size: 36px;
 	font-weight: inherit;
 	vertical-align: bottom;
-	padding-left: 35px;
-	letter-spacing: -1px;
+	padding-left: 34px;
+    letter-spacing: -0.3px;
 }
 .b-call-form input:focus::before { display: none; }
 
@@ -203,6 +202,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 48px;
 	font-weight: 300;
+	letter-spacing: -0.5px;
 }
 .b-our-work {
 	box-sizing: border-box;
@@ -250,11 +250,10 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-weight: 600;
 	padding-top: 66px;
 	margin-bottom: 25px;
-	letter-spacing: -1px;
-	word-spacing: 3px;
+	letter-spacing: -0.6px;
 }
 .b-our-features__list-item {
-	padding-left: 35px;
+	padding-left: 36px;
 	margin-bottom: 39px;
 }
 .b-our-features__list-item:last-child { margin-bottom: 0; }
@@ -263,7 +262,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	display: inline-block;
 	width: 32px;
 	height: 23px;
-	margin-right: 34px;
+	margin-right: 32px;
 	background: url(../img/check-icon.png) no-repeat;
 }
 .b-questions {
@@ -272,16 +271,18 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	margin-bottom: 95px;
 }
 .b-questions-wrapper {
-	padding-left: 58px;
+	padding-top: 3px;
+	padding-left: 60px;
 } 
 .b-questions-questions__headline-wrapper {
-	padding-left: 97px;
-	margin-bottom: 27px;
+	padding-left: 95px;
+	margin-bottom: 28px;
 }
 .b-questions__headline {
 	font-size: 28px;
 	font-weight: 300;
-	line-height: 36px;
+	line-height: 34px;
+	letter-spacing: -0.28px;
 }
 .b-questions__text-wrapper {	
 	box-sizing: border-box;
@@ -290,8 +291,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	border-style: solid;
 	border-radius: 10px;
 	width: 840px;
-	padding-top: 20px;
-	padding-left: 50px;
+	padding-top: 19px;
 	position: relative;
 }
 .b-questions__text-wrapper::before {
@@ -302,12 +302,12 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	color: #000;
 	position: absolute;
 	top: -210px;
-	left: 14px;
+	left: 12px;
 }
 .b-questions__text {
 	text-align: center;
 	text-transform: none;
-	line-height: 20px;
+	line-height: 19px;
 }
 .b-text-italic {
 	font-family: "Open Sans";
@@ -315,6 +315,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-style: italic;
 	font-weight: 400;
 	margin-bottom: 36px;
+	line-height: 21px;
 }
 .b-questions .b-text-italic::after {
 	content: "";
@@ -329,10 +330,11 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-text-bold {
 	font-size: 16px;
 	font-weight: 600;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 }
 .b-questions__text:last-child{
-	margin-bottom: 20px;
+	margin-bottom: 21px;
+    line-height: 19px;
 }
 .b-call-us {
 	background-color:  #bb1d1f;
@@ -343,12 +345,14 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-family: Open Sans, sans-serif;
 	font-size: 24px;
 	font-weight: 600;
+	letter-spacing: -0.24px;
+    line-height: 32px;
 	text-transform: none;
 	text-align: center;
 	color:  #fff;
 }
 .b-call-us__form {
-    padding-top: 34px;
+    padding-top: 35px;
 }
 .b-call-us__form input,
 .b-call-us__button {
@@ -367,11 +371,10 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-call-us__button {
 	width: 239px;
 	height: 40px;
-	padding: 5px 10px;
 	margin: 0;
 	border: 2px solid #fff;
 	font-family: Open Sans, sans-serif;
-	font-size: 20px;
+	font-size: 19px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #fff;
@@ -380,7 +383,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-call-us__form input[placeholder] {
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 300;
 }
 .b-call-us__form input::-webkit-input-placeholder  { color: #000; }
@@ -439,6 +442,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-creator {
 	float: right;
 	position: relative;
+	padding-top: 2px;
 }
 .b-creator__text {
 	font-family: Open Sans;
@@ -447,5 +451,5 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	text-transform: none;
 	color:  #9b9b9b;
 	position: absolute;
-	top: 32px;
+	top: 34px;
 }
