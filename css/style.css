@@ -10,7 +10,7 @@ body {
 	text-transform: uppercase;
 	color: #000;
 }
-section, div, p, h1, h2, h3, h4, img, ul, li {
+section, div, p, h1, h2, h3, h4, img, ul, li, a {
 	margin: 0;
 	padding: 0;
 }
@@ -86,7 +86,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	letter-spacing: 0.1rem;
     line-height: 41px;
 }
-
 .b-call-number__tel {
 	font-size: 48px;
 	line-height: 71px;
