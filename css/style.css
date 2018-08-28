@@ -10,7 +10,7 @@ body {
 	text-transform: uppercase;
 	color: #000;
 }
-section, div, p, h1, h2, h3, h4, img, ul, li, input, button {
+section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 	margin: 0;
 	padding: 0;
 }
