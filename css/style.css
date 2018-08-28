@@ -36,9 +36,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.b-header {
-	margin-bottom: 10px;
-}
 .b-header__logo-wrapper {
 	position: relative;
 	display: flex;
@@ -50,6 +47,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button {
 	text-decoration: none;
 }
 .b-header .b-logo {
+	padding-top: 10px;
 	margin-right: 33px;
 }
 .b-logo__picture {
@@ -101,7 +99,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button {
 	text-decoration-style: dashed;
 }
 .b-return-call {
-	padding-top: 30px;
+	padding-top: 40px;
 }
 .b-return-wrapper {
 	display: flex;
