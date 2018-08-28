@@ -222,17 +222,18 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	margin-right: 0;
 }
 .b-our-work__item:nth-child(3n) { margin-right: 0; }
-.b-our-work__item-img {
+.b-our-work__item-img,
+.b-our-work__text {
 	display: inline-block;
+	vertical-align: middle;
+}
+.b-our-work__item-img {
 	width: 137px;
 	height: 137px;
 	margin-right: 5px;
-	vertical-align: middle;
 }
 .b-our-work__text {
-	display: inline-block;
 	width: 145px;
-	vertical-align: middle;
 	overflow-wrap: wrap;
 	line-height: 20px;
 }
