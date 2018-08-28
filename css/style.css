@@ -10,7 +10,7 @@ body {
 	text-transform: uppercase;
 	color: #000;
 }
-section, div, p, h1, h2, h3, h4, img, ul, li {
+section, div, p, h1, h2, h3, h4, img, ul, li, input, button {
 	margin: 0;
 	padding: 0;
 }
@@ -24,7 +24,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-weight: bold;
 }
 .b-container {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 .b-header-wrapper {
@@ -41,18 +41,18 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-header__logo-wrapper {
 	position: relative;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .b-logo {
 	text-decoration: none;
 }
-.b-header .b-logo,
-.b-call-number {
-	display: inline-block;
-	vertical-align: middle;
-}
 .b-header .b-logo {
-	margin-right: 24px;
-	transform: translateY(6px);
+	margin-right: 33px;
+    transform: translateY(5px);
 }
 .b-logo__picture {
 	width: 428px;
@@ -102,11 +102,14 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	color: #000;
 	text-decoration-style: dashed;
 }
-.b-return-text-wrapper {
-	margin-bottom: 11px;
-}
 .b-return-call {
-	padding-top: 15px;
+	padding-top: 30px;
+}
+.b-return-wrapper {
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	margin-bottom: 10px;
 }
 .b-return-call__text {
 	display: block;
@@ -134,7 +137,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-weight: 600;
 }
 .b-call-wrapper {
-	padding-top: 52px;
+	padding-top: 42px;
 }
 .b-call-form__input-wrapper { position: relative; }
 .b-call-form__input {
@@ -149,7 +152,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	background: transparent;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	
     text-transform: uppercase;
 }
 .b-call-form__input-wrapper::before {
@@ -340,7 +342,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-call-us {
 	background-color:  #bb1d1f;
-	height: 150px;
+	min-height: 150px;
 	padding-top: 30px;
 }
 .b-call-us__headline {
@@ -354,24 +356,27 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	color:  #fff;
 }
 .b-call-us__form {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     padding-top: 35px;
 }
-.b-call-us__form input,
-.b-call-us__button {
-	display: inline-block;
-	vertical-align: middle;
-	box-sizing: border-box;
-}
+
 .b-call-us__form input {
 	border: 0;
-	width: 341px;
-	height: 40px;
-	padding-left: 12px;
-	margin-right: 15px;
+	width: 329px;
+    height: 40px;
+    padding-left: 12px;
+    margin-right: 19px;
 	background-color:  #fff;
 }
+.b-call-us__form input[type="tel"] { 
+	width: 328px;
+	margin-right: 20px;
+}
 .b-call-us__button {
-	width: 239px;
+	width: 240px;
 	height: 40px;
 	margin: 0;
 	border: 2px solid #fff;
@@ -428,6 +433,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-footer__logo {
 	margin-right: 10px;
+	transform: translateX(-1px);
 }
 .b-footer__tel {
     font-size: 22px;
