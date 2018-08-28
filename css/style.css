@@ -112,7 +112,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	display: block;
 	box-sizing: border-box;
 	height: 48px;
-	padding: 0 16px;
+	padding-left: 16px;
 	margin-bottom: 12px;
 	background-color: #fff;
 	font-family: "Open Sans";
