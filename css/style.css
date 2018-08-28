@@ -24,7 +24,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	font-weight: bold;
 }
 .b-container {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 .b-header-wrapper {
@@ -35,9 +35,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	background-image: url(../img/header_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-}
-.b-header {
-	margin-bottom: 10px;
 }
 .b-header__logo-wrapper {
 	position: relative;
@@ -102,7 +99,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	margin-bottom: 11px;
 }
 .b-return-call {
-	padding-top: 15px;
+	padding-top: 40px;
 }
 .b-return-call__text {
 	display: block;
