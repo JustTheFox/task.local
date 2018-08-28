@@ -41,6 +41,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li, a {
 }
 .b-logo {
 	text-decoration: none;
+	font-size: 0;
 }
 .b-header .b-logo,
 .b-call-number {
@@ -50,7 +51,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li, a {
 .b-header .b-logo {
 	margin-right: 24px;
 }
-.b-logo__picture {
+.b-header .b-logo__picture {
 	width: 428px;
 	height: 87px;
 }
@@ -404,7 +405,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li, a {
 .b-footer__creator {
 	display: inline-block;
 }
-
 .b-logo-text-wrapper {
 	float: left;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -412,13 +412,17 @@ section, div, p, h1, h2, h3, h4, img, ul, li, a {
 	font-weight: 700;
 	text-transform: none;
 }
-.b-footer__logo,
+.b-footer .b-logo,
 .b-footer__tel {
 	display: inline-block;
 	vertical-align: middle;
 }
-.b-footer__logo {
+.b-footer .b-logo {
 	margin-right: 10px;
+}
+.b-footer .b-logo__picture {
+	width: 205px;
+	height: 42px;
 }
 .b-footer__tel {
     font-size: 22px;
