@@ -52,7 +52,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-header .b-logo {
 	margin-right: 24px;
-	transform: translateY(6px);
 }
 .b-logo__picture {
 	width: 428px;
@@ -61,8 +60,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-header .b-call-number {
 	box-sizing: border-box;
 	width: 479px;
-	padding-top: 10px;
-	padding-left: 10px;
+	padding: 10px 19px 11px 10px;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.8);
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -81,7 +79,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-call-number__around,
 .b-call-number__tel {
 	display: block;
-	margin-right: 19px;
 }
 .b-call-number__text {
 	text-transform: none;
@@ -96,7 +93,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 .b-call-number__tel {
 	font-size: 48px;
 	line-height: 71px;
-    margin-bottom: 11px;
 }
 .b-call-number__tel-a {
 	color: #000;
@@ -212,7 +208,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	padding-top: 42px;
 	background-color: #fff;
 }
-.b-our-work-items {
+.b-our-work__items {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -226,7 +222,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	margin-right: 0;
 }
 .b-our-work__item:nth-child(3n) { margin-right: 0; }
-.b-our-work__img {
+.b-our-work__item-img {
 	display: inline-block;
 	width: 137px;
 	height: 137px;
@@ -274,10 +270,9 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-questions-wrapper {
 	padding-top: 3px;
-	padding-left: 60px;
 } 
-.b-questions-questions__headline-wrapper {
-	padding-left: 95px;
+.b-headline-wrapper {
+	padding-left: 155px;
 	margin-bottom: 28px;
 }
 .b-questions__headline {
@@ -288,12 +283,11 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-questions__text-wrapper {	
 	box-sizing: border-box;
-	border-width: 3px;
-	border-color:  #ff9c00;
-	border-style: solid;
+	border: 3px solid #ff9c00;
 	border-radius: 10px;
 	width: 840px;
 	padding-top: 19px;
+	margin: 0 auto;
 	position: relative;
 }
 .b-questions__text-wrapper::before {
@@ -311,13 +305,14 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	text-transform: none;
 	line-height: 19px;
 }
-.b-text-italic {
+.b-questions .b-text-italic {
 	font-family: "Open Sans";
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 400;
 	margin-bottom: 36px;
 	line-height: 21px;
+	position: relative;
 }
 .b-questions .b-text-italic::after {
 	content: "";
@@ -326,7 +321,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 	height: 3px;
 	background-color:  #000;
 	position: absolute;
-	top: 77px;
+	top: 58px;
     left: 372px;
 }
 .b-text-bold {
@@ -431,7 +426,6 @@ section, div, p, h1, h2, h3, h4, img, ul, li {
 }
 .b-footer__tel {
     font-size: 22px;
-    transform: translateY(-2px);
 }
 .b-footer__tel-link {
 	color: #000;
