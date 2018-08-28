@@ -45,9 +45,9 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 }
 .b-logo {
 	text-decoration: none;
+	font-size: 0;
 }
 .b-header .b-logo {
-	padding-top: 10px;
 	margin-right: 33px;
 }
 .b-logo__picture {
