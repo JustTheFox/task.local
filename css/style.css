@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300i,400i,600i&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic');
 
-body {
+section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
+	margin: 0;
+	padding: 0;
+}
+.b-page {
 	margin: 0;
 	padding: 0;
 	max-width: 1920px;
@@ -9,10 +13,6 @@ body {
 	font-size: 36px;
 	text-transform: uppercase;
 	color: #000;
-}
-section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
-	margin: 0;
-	padding: 0;
 }
 :active, :hover, :focus {
     outline: 0;
@@ -277,7 +277,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 .b-questions-wrapper {
 	padding-top: 3px;
 } 
-.b-questions-questions__headline-wrapper {
+.b-questions__headline-wrapper {
 	padding-left: 155px;
 	margin-bottom: 28px;
 }
@@ -456,17 +456,65 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 }
 
 @media screen and (max-width: 1024px) {
-	. {
-    	
+	.b-page {
+    	font-size: 30px;
     }
-    . {
-    	
+    .b-header .b-logo {
+    	width: 45%;
+	    margin-right: 20px; 
     }
-    . {
-    	
+    .b-header .b-call-number {
+    	width: 50%;
     }
-    . {
-    	
+    .b-call-number::before {
+    	display: none;
+    }
+    .b-call-number__text {
+    	line-height: 40px;
+    }
+    .b-call-number__around {
+    	line-height: 34px;
+    }
+    .b-call-number__tel {
+	    font-size: 42px;
+	    line-height: 62px;
+	}
+    .b-call-form input[placeholder] {
+    	font-size: 32px;
+    }
+    .b-call-form__button {
+    	font-size: 22px;
+    }
+    .b-page-main {
+    	font-size: 15px;
+    }
+    .b-page-main__headline {
+    	font-size: 40px;
+    }
+    .b-our-features__list {
+    	font-size: 20px;
+    }
+    .b-questions {
+    	padding-top: 60px;
+    	margin-bottom: 55px;
+    }
+    .b-questions__headline-wrapper {
+    	padding-left: 95px;
+    }
+    .b-questions__headline {
+    	font-size: 26px;
+    }
+    .b-questions__text-wrapper::before {
+    	font-size: 240px;
+    	top: -180px;
+    	left: 4px;
+    }
+    .b-call-us__headline {
+    	font-size: 22px;
+    }
+    .b-call-us__form input[placeholder],
+    .b-call-us__button {
+    	font-size: 15px;
     }
 }
 
@@ -476,6 +524,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 		font-size: 70%;
 	}
 	.b-header .b-logo {
+		width: 100%;
 		margin: 0 0 10px 0;
 		align-self: center;
 	}
@@ -487,8 +536,11 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 	.b-return-call__text {
     	width: auto;
 	}
+	.b-call-form {
+    	margin-bottom: 5px;
+	}
 	.b-call-form input[placeholder] {
-		font-size: 30px;
+		font-size: 28px;
 	}
 	.b-call-form__button {
 		font-size: 20px;
@@ -519,10 +571,18 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 	.b-questions {
 		margin-bottom: 50px;
 	}
+	.b-call-us__headline {
+		font-size: 20px;
+	}
 	.b-call-us__form {
+		flex-flow: row wrap;
 		margin-bottom: 30px;
 	}
-	.b-questions-questions__headline-wrapper,
+	.b-call-us__form input,
+	.b-call-us__form input[type="tel"] {
+    	margin-right: 10px;
+	}
+	.b-questions__headline-wrapper,
 	.b-call-us__form input,
 	.b-logo-text-wrapper {
 		margin-bottom: 10px;
@@ -535,7 +595,7 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 		top: -195px;
     	left: -5px;
 	}
-	.b-questions-questions__headline-wrapper {
+	.b-questions__headline-wrapper {
     	padding-left: 75px;	
 	}
 	.b-questions__headline {
@@ -550,17 +610,18 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
     .b-footer {
     	margin-bottom: 20px;
     }
-    . {
-    	
+    .b-footer__text {
+    	white-space: normal;
     }
 }
 
 @media screen and (max-width: 320px) {
 	.b-header-wrapper {
 		padding-top: 15px;
-		font-size: 40%;
+		font-size: 45%;
 	}
 	.b-header .b-logo {
+		width: 100%;
 		margin: 0 0 10px 0;
 		align-self: center;
 	}
@@ -577,11 +638,15 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
     	width: auto;
     	font-weight: 600;
 	}
+	.b-call-form {
+		margin-bottom: 0;
+	}
 	.b-call-form input[placeholder] {
-		font-size: 21px;
+		font-size: 20px;
 	}
 	.b-call-form__button {
-		font-size: 20px;
+		width: 95%;
+		font-size: 18px;
 		margin-bottom: 35px;
 	}
 	.b-page-main__headline {
@@ -621,12 +686,12 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 	.b-questions {
 		margin-bottom: 30px;
 	}
-	.b-questions-questions__headline-wrapper,
+	.b-questions__headline-wrapper,
 	.b-call-us__form input,
 	.b-logo-text-wrapper {
 		margin-bottom: 10px;
 	}
-	.b-questions-questions__headline-wrapper {
+	.b-questions__headline-wrapper {
     	padding-left: 45px; 
     }
     .b-questions__headline {
@@ -668,7 +733,4 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 	    white-space: normal;
 	    line-height: 18px;
 	}
-    . {
-    	
-    }
 }
