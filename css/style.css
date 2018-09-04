@@ -539,6 +539,9 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 	.b-call-form {
     	margin-bottom: 5px;
 	}
+	.b-call-form input {
+		width: 100%;
+	}
 	.b-call-form input[placeholder] {
 		font-size: 28px;
 	}
@@ -562,11 +565,14 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 		margin-bottom: 30px;
 	}
 	.b-our-features__list-item {
-		padding-left: 20px;
+		padding-left: 40px;
 		margin-bottom: 20px;
+		position: relative;
 	}
 	.b-our-features__list-item::before {
-		margin-right: 15px;
+		position: absolute;
+		top: 5px;
+    	left: 0;
 	}
 	.b-questions {
 		margin-bottom: 50px;
@@ -575,12 +581,16 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 		font-size: 20px;
 	}
 	.b-call-us__form {
-		flex-flow: row wrap;
+		flex-flow: column nowrap;
+		align-items: center;
 		margin-bottom: 30px;
 	}
 	.b-call-us__form input,
 	.b-call-us__form input[type="tel"] {
-    	margin-right: 10px;
+		margin-right: 0;
+	}
+	.b-call-us__form input {
+		width: 75%;
 	}
 	.b-questions__headline-wrapper,
 	.b-call-us__form input,
@@ -639,7 +649,13 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
     	font-weight: 600;
 	}
 	.b-call-form {
+		flex-flow: column nowrap;
+		align-items: center;
 		margin-bottom: 0;
+	}
+	.b-call-form input {
+		width: 100%;
+		margin-right: 0;
 	}
 	.b-call-form input[placeholder] {
 		font-size: 20px;
@@ -677,11 +693,14 @@ section, div, p, h1, h2, h3, h4, img, ul, li, input, button, a {
 		margin-bottom: 30px;
 	}
 	.b-our-features__list-item {
-		padding-left: 20px;
+		padding-left: 40px;
 		margin-bottom: 20px;
+		position: relative;
 	}
 	.b-our-features__list-item::before {
-		margin-right: 15px;
+		position: absolute;
+		top: 5px;
+    	left: 0;
 	}
 	.b-questions {
 		margin-bottom: 30px;
